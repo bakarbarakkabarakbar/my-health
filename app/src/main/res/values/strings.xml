@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">myHealth</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="or">or</string>
+    <string name="sign_in">Sign In</string>
+    <string name="you_are_signed_in">You Are Signed In</string>
+    <string name="sign_out">Sign Out</string>
+</resources>
