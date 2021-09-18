@@ -7,12 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.eprototype.myhealth.databinding.ActivitySignInBinding
 import com.eprototype.myhealth.extensions.Extensions.toast
 import com.eprototype.myhealth.utils.FirebaseUtils.firebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
     lateinit var signInEmail: String
     lateinit var signInPassword: String
     lateinit var signInInputsArray: Array<EditText>
+    lateinit var user: FirebaseUser
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,9 +43,17 @@ class SignInActivity : AppCompatActivity() {
             firebaseAuth.signInWithEmailAndPassword(signInEmail, signInPassword)
                 .addOnCompleteListener { signIn ->
                     if (signIn.isSuccessful) {
-                        startActivity(Intent(this, HomeActivity::class.java))
-                        toast("signed in successfully")
-                        finish()
+                        user = firebaseAuth.currentUser!!
+                        if (user.isEmailVerified){
+                            startActivity(Intent(this, HomeActivity::class.java))
+                            toast("signed in successfully")
+                            finish()
+                        }
+                        else{
+                            startActivity(Intent(this, EmailVerificationActivity::class.java))
+                            finish()
+                        }
+
                     } else {
                         toast("sign in failed")
                     }

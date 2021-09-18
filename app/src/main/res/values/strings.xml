@@ -8,4 +8,7 @@
     <string name="sign_in">Sign In</string>
     <string name="you_are_signed_in">You Are Signed In</string>
     <string name="sign_out">Sign Out</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="email_verification_sent">Your email verification has sent! Please open your email.</string>
 </resources>

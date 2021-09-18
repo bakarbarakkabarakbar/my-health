@@ -12,10 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealth">
         <activity
+            android:name=".views.EmailVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".views.ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".views.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,8 +32,6 @@
         <activity
             android:name=".views.HomeActivity"
             android:exported="true" />
-
-
     </application>
 
 </manifest>
