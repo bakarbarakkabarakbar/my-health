@@ -11,4 +11,5 @@
     <string name="change_password">Change Password</string>
     <string name="change_email">Change Email</string>
     <string name="email_verification_sent">Your email verification has sent! Please open your email.</string>
+    <string name="write_file">File</string>
 </resources>

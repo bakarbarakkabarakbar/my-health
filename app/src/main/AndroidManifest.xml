@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealth">
         <activity
+            android:name=".views.CreateFileActivity"
+            android:exported="true" />
+        <activity
             android:name=".views.EmailVerificationActivity"
             android:exported="true" />
         <activity

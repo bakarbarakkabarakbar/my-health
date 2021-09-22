@@ -31,5 +31,9 @@ class HomeActivity : AppCompatActivity() {
             toast("signed out")
             finish()
         }
+        binding.btnFile.setOnClickListener {
+            startActivity(Intent(this, CreateFileActivity::class.java))
+            finish()
+        }
     }
 }
