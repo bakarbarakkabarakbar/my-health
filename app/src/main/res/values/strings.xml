@@ -12,4 +12,12 @@
     <string name="change_email">Change Email</string>
     <string name="email_verification_sent">Your email verification has sent! Please open your email.</string>
     <string name="write_file">File</string>
+    <string name="sign">Sign</string>
+    <string name="verify">Verify</string>
+    <string name="view">View</string>
+    <string name="save">Save</string>
+    <string name="file_data">File Data</string>
+    <string name="file_name">File Name</string>
+    <string name="data">data</string>
+    <string name="edit_file">Filename</string>
 </resources>

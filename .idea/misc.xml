@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_create_file.xml" value="0.17291666666666666" />
+        <entry key="app/src/main/res/layout/activity_create_file.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_create_key_pair.xml" value="0.17291666666666666" />
         <entry key="app/src/main/res/layout/activity_email_verification.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.28804347826086957" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.33" />
